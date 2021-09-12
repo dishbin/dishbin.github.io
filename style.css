@@ -1,0 +1,465 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: relative;
+    z-index: -5;
+    width: 100vw;
+}
+
+.tab {
+    margin-left: 3em;
+}
+
+.footer {
+    background-color: rgb(100, 100, 100);
+    width: 100vw;
+    padding: 3em;
+    bottom: 0em;
+    left: -2em;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.footer a:hover {
+    color:rgb(255, 174, 0);
+}
+
+/*-------- Header -----------*/
+
+.header-div {
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+}
+
+.header-background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.header-background-image {
+    position: absolute;
+    height: 30em;
+    width: 101vw;
+    top: -10em;
+    left: -1em;
+    z-index: -1;
+}
+
+.header-background-image-small {
+    display: none;
+}
+
+
+.gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
+    position: relative;
+    z-index: 1;
+    height: 20em;
+    width: 100vw;
+    top: 0;
+    left: -1em;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin: 6em auto;
+}
+
+.profile-image {
+    width: 200px;
+    box-shadow: 0px, 0px, 10px, red;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0rem 3rem;
+    
+}
+
+.title-div {
+    font-size: large;
+    text-align: left;
+    font-weight: bolder;
+    text-shadow: 
+        -1px -1px 3px white, 
+        1px -1px 3px white, 
+        -1px 1px 3px white, 
+        1px 1px 3px white;
+}
+
+.social-links {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 411px;
+    margin: 0em auto;
+}
+
+.social-link {
+    text-decoration: none;
+    font-size: large;
+    color:rgb(100, 100, 100)
+}
+
+.social-link:hover {
+    text-decoration: none;
+    font-size: large;
+    color:rgb(255, 174, 0);
+}
+
+.social-link-icon {
+    text-decoration: none;
+    font-size: x-large;
+    margin: 0em 0.5em;
+}
+
+/*----------- tools & tech -----------*/
+
+.tools-and-tech {
+    padding: 2em;
+    background: 
+        linear-gradient(217deg, rgba(100, 100, 100, 0.5), rgba(0, 0, 0, 0.0) 50%),
+        linear-gradient(109deg, rgba(161, 209, 252, 0.5), rgba(0, 0, 0, 0.0) 50%),
+        linear-gradient(34deg, rgba(255, 239, 116, 0.5), rgba(0, 0, 0, 0.0) 50%);
+    max-width: 60em;
+    margin: 2em auto;
+    margin-bottom: 5em;
+    border-radius: 1em;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tech-item-div {
+    max-width: 60em;
+    margin: 0em auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:rgb(100, 100, 100);
+    background-color: rgb(255, 255, 255);
+    padding: 0.25em 1em;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+    width: 7em;
+}
+
+.tech-item-logo {
+    font-size: xx-large;
+    margin-right: 0.5em;
+}
+
+.tech-icon {
+    width: 30px;
+    margin-right: 0.5em;
+}
+
+.tool-item-div {
+    max-width: 60em;
+    margin: 0em auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tool-tech-header {
+    color:white;
+    background-color: rgba(100, 100, 100, 0.6);
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 10em;
+    margin: 2em auto 0.5em auto;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+}
+
+.tool-icon {
+    width: 30px;
+    margin-right: 0.5em;
+}
+
+.tech-label {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+
+
+.tools-label {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.tools-item {
+    color:whitesmoke;
+    background-color: gray;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0rem 0.5rem gray;
+}
+
+/*------- desc -----------*/
+
+.desc-div {
+    max-width: 60em;
+    padding: 2em;
+    margin: 1em auto;
+    margin-bottom: 5em;
+    border-radius: 1em;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+    background: 
+        linear-gradient(217deg, rgba(100, 100, 100, 0.5), rgba(0, 0, 0, 0.0) 50%),
+        linear-gradient(109deg, rgba(161, 209, 252, 0.5), rgba(0, 0, 0, 0.0) 50%),
+        linear-gradient(34deg, rgba(255, 239, 116, 0.5), rgba(0, 0, 0, 0.0) 50%);
+}
+
+.desc-header {
+    color:white;
+    background-color: rgba(100, 100, 100, 0.6);
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 1em auto;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+    width: 30em;
+}
+
+.desc {
+    color:white;
+    background-color: rgba(100, 100, 100, 0.6);
+    padding: 1em 3em;
+    border-radius: 0.5em;
+    margin: 1em 6.75em;
+    font-size: large;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+    text-align: left;
+}
+/*------- Project Div ---------*/
+
+.projects-heading {
+    color:white;
+    background-color: rgba(100, 100, 100, 0.6);
+    padding: 0.25em 1em;
+    border-radius: 0.5em;
+    margin: 1em auto;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+    width: 20em;
+    font-size: x-large;
+
+}
+
+.project-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 60em;
+    padding: 2em;
+    margin: 1em auto;
+    margin-bottom: 5em;
+    border-radius: 1em;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+    background: 
+        linear-gradient(217deg, rgba(100, 100, 100, 0.5), rgba(0, 0, 0, 0.0) 50%),
+        linear-gradient(109deg, rgba(161, 209, 252, 0.5), rgba(0, 0, 0, 0.0) 50%),
+        linear-gradient(34deg, rgba(255, 239, 116, 0.5), rgba(0, 0, 0, 0.0) 50%);
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(100, 100, 100, 0.6);
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 1em auto;
+}
+
+.project-desc {
+    max-width: 30em;
+    color:white;
+    background-color: rgba(100, 100, 100, 0.6);
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 1em auto;
+    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
+    text-align: left;
+    font-size: large;
+}
+
+.project-title {
+    color:white;
+    width: 10em;
+    font-size: x-large;
+}
+
+.feedback-loop-image {
+    width: 15em;
+    border: 5px solid rgb(100, 100, 100);
+    margin: 1em;
+}
+
+.ear-trainer-image {
+    width: 10em;
+    border: 5px solid rgb(100, 100, 100);
+    margin: 1em;
+}
+
+.screenshots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 415px) {
+    .header-background-image {
+        display: none;
+        
+    }
+
+    .header-background-image-small {
+        display: block;
+        position: absolute;
+        top: -10em;
+        width: 102vw;
+        left: -1em;
+        margin: 0em;
+    }
+
+    .header {
+        flex-direction: column;
+        width: 100vw;
+        margin: 6em auto 2em auto;
+    }
+
+    .gradient {
+        height: 15em;
+        width: 102vw;
+        left: -1em;
+    }
+
+    .profile-image {
+        width: 100px;
+    }
+
+    .title-div {
+        text-align: center;
+    }
+
+    .tools-and-tech {
+        margin: 2em 0.5em;
+        justify-content: center;
+    }
+
+    .tech-item {
+        margin: 1em auto;
+    }
+
+    .tech-item-div, .tool-item-div {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .desc-div {
+        margin: 2em 0.5em;
+        padding: 0.5em;
+    }
+
+    .desc-header {
+        margin: 2em 1em;
+        width: auto;
+        font-size: large;
+    }
+
+    .desc {
+        margin: 0.1em;
+        font-size: medium;
+        text-align: justify;
+        padding: 1em 1em;
+    }
+
+    .tab {
+        margin-left: 1em;
+    }
+
+    .projects-heading {
+        width: auto;
+        margin: 1em 1em;
+        font-size: medium;
+    }
+
+    .project-div {
+        flex-direction: column-reverse;
+        padding: 1em 0.5em;
+        margin: 2em auto;
+    }
+
+    .project-header {
+        margin: 1em 0.5em;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .project-title {
+        margin: 0.5em auto;
+    }
+
+    .footer {
+        padding: 1.5em;
+        width: 100vw;
+    }
+}
+
+
+
