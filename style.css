@@ -371,7 +371,7 @@ body {
     flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 541px) {
     .header-background-image {
         display: none;
         
@@ -381,7 +381,7 @@ body {
         display: block;
         position: absolute;
         top: -10em;
-        width: 102vw;
+        width: 105vw;
         left: -1em;
         margin: 0em;
     }
@@ -389,12 +389,12 @@ body {
     .header {
         flex-direction: column;
         width: 100vw;
-        margin: 6em auto 2em auto;
+        margin: 3em auto 2em auto;
     }
 
     .gradient {
-        height: 15em;
-        width: 102vw;
+        height: 13.5em;
+        width: 105vw;
         left: -1em;
     }
 
@@ -451,6 +451,7 @@ body {
     .project-div {
         flex-direction: column-reverse;
         padding: 1em 0.5em;
+        width: auto;
         margin: 2em auto;
     }
 
@@ -466,7 +467,43 @@ body {
 
     .footer {
         padding: 1.5em;
-        width: 100vw;
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .header-background-image {
+        height: 20em;
+    }
+
+    .gradient {
+        height: 11em;
+    }
+
+    .header {
+        margin-bottom: 1em;
+    }
+
+    .desc-header {
+        width: 80vw;
+    }
+
+    .desc-div {
+        margin: 1em auto;
+        width: 85vw;
+    }
+
+    .desc {
+        margin: 1em auto;
+    }
+
+    .project-div {
+        margin: 1em auto;
+        width: 85vw;
+    }
+
+    .project-header {
+        width: 35vw;
     }
 }
 
