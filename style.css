@@ -140,6 +140,38 @@ body {
 
 /*----------- tools & tech -----------*/
 
+.sidescroll {
+    background-color: rgb(100, 100, 100);
+
+    position: relative;
+    z-index: 5;
+    left: -0.5em;
+    display: flex;
+    flex-direction: row;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    margin: 1em auto;
+}
+
+.scroll-item {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0em;
+    padding: 0.5em 2em;
+
+    width: 10em;
+
+    border-right: 1px solid white;
+}
+
+.last-item {
+    border-right: none;
+}
+
 .tools-and-tech {
     padding: 2em;
     background: 
@@ -175,7 +207,6 @@ body {
     padding: 0.25em 1em;
     margin: 1rem;
     border-radius: 0.25rem;
-    box-shadow: 0rem 0.5rem 1rem rgb(100, 100, 100);
     width: 7em;
 }
 
@@ -220,6 +251,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+}
+
+.tech-item-name {
+    width: 5em;
 }
 
 
