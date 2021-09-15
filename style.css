@@ -207,7 +207,7 @@ body {
     padding: 0.25em 1em;
     margin: 1rem;
     border-radius: 0.25rem;
-    width: 7em;
+    width: auto;
 }
 
 .tech-item-logo {
@@ -254,7 +254,9 @@ body {
 }
 
 .tech-item-name {
-    width: 5em;
+    width: 6em;
+    text-align: center;
+    margin-left: 0.5em;
 }
 
 
@@ -271,12 +273,15 @@ body {
 }
 
 .tools-item {
-    color:whitesmoke;
-    background-color: gray;
-    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:rgb(100, 100, 100);
+    background-color: rgb(255, 255, 255);
+    padding: 0.25em 1em;
     margin: 1rem;
     border-radius: 0.25rem;
-    box-shadow: 0rem 0rem 0.5rem gray;
+    width: 10em;
 }
 
 /*------- desc -----------*/
