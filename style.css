@@ -511,7 +511,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 769px) and (min-width: 451px) {
     .header-background-image {
         height: 20em;
     }
