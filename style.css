@@ -126,9 +126,19 @@ body {
     color:rgb(100, 100, 100)
 }
 
+.project-link {
+    text-decoration: none;
+    color:rgb(255, 255, 255)
+}
+
 .social-link:hover {
     text-decoration: none;
     font-size: large;
+    color:rgb(255, 174, 0);
+}
+
+.project-link:hover {
+    text-decoration: none;
     color:rgb(255, 174, 0);
 }
 
@@ -146,11 +156,13 @@ body {
     position: relative;
     z-index: 5;
     left: -0.5em;
+    width: 103vw;
     display: flex;
     flex-direction: row;
 
     overflow-y: hidden;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 
     margin: 1em auto;
 }
@@ -166,6 +178,39 @@ body {
     width: 10em;
 
     border-right: 1px solid white;
+}
+
+.swipe-div {
+    position: absolute;
+    z-index: 8;
+    width: 100vw;
+    text-align: center;
+    
+}
+
+.swipe {
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.8);
+    animation-duration: 3s;
+    animation-name: swipe;
+    display: none;
+}
+
+@keyframes swipe {
+    from {
+        transform: translateX(5em);
+        color: rgba(255, 255, 255, 0)
+
+    }
+
+    50% {
+        color: rgba(255, 255, 255, 1)
+    }
+
+    to {
+        transform: translateX(-5em);
+        color: rgba(255, 255, 255, 0)
+    }
 }
 
 .last-item {
@@ -412,6 +457,12 @@ body {
 }
 
 @media only screen and (max-width: 541px) {
+
+    .body{
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
     .header-background-image {
         display: none;
         
@@ -461,8 +512,9 @@ body {
     }
 
     .desc-div {
-        margin: 2em 0.5em;
+        margin: 2em auto;
         padding: 0.5em;
+        width: 90vw;
     }
 
     .desc-header {
@@ -491,7 +543,7 @@ body {
     .project-div {
         flex-direction: column-reverse;
         padding: 1em 0.5em;
-        width: auto;
+        width: 90vw;
         margin: 2em auto;
     }
 
@@ -511,7 +563,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 769px) and (min-width: 451px) {
+@media only screen and (max-width: 766px) and (min-width:542) {
     .header-background-image {
         height: 20em;
     }
