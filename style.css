@@ -563,14 +563,12 @@ body {
     }
 }
 
-@media only screen and (max-width: 766px) and (min-width:542) {
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
+    
     .header-background-image {
         height: 20em;
     }
 
-    .gradient {
-        height: 11em;
-    }
 
     .header {
         margin-bottom: 1em;
@@ -586,18 +584,27 @@ body {
     }
 
     .desc {
-        margin: 1em auto;
+        margin: auto;
     }
 
     .project-div {
-        margin: 1em auto;
+        margin: 2em auto;
+        padding: 1em 0.5em;
         width: 85vw;
     }
 
     .project-header {
         width: 35vw;
     }
-}
 
+    .project-info {
+        width: 45vw;
+    }
+
+    .project-header {
+        flex-direction: column;
+    }
+
+}
 
 
