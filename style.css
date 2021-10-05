@@ -194,6 +194,7 @@ body {
     animation-duration: 3s;
     animation-name: swipe;
     display: none;
+    overflow-x: hidden;
 }
 
 @keyframes swipe {
